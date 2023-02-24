@@ -178,10 +178,10 @@
     }
     .white-header .mean-container a.meanmenu-reveal,
     .transparent-header .mean-container a.meanmenu-reveal {
-        left: 258px;
-        right: 0;
-        top: -40px;
-    }
+    left: 305px;
+    right: 0;
+    top: -36px;
+}
     .white-header .mean-container a.meanmenu-reveal,
     .transparent-header .mean-container a.meanmenu-reveal {
         margin-top: -37px;
