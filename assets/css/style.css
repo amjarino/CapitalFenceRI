@@ -28,7 +28,7 @@
 /* header-top-area */
 element.style {
     text-underline-position: under;
-    color: #ffffff;
+    color: #ffffff!important;
     font-size: 15px;
 }
 
