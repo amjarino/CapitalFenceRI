@@ -26,6 +26,11 @@
 
 
 /* header-top-area */
+element.style {
+    text-underline-position: under;
+    color: #ffffff;
+    font-size: 15px;
+}
 
 .header-menu .scroll-header .main-menu.transparent-menu ul li a {
     color: #000;
