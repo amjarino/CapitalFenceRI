@@ -1214,7 +1214,7 @@ select,
 }
 
 .bg-opacity::before {
-    background: #00000066 none repeat scroll 0 0;
+    background: #000000d1 none repeat scroll 0 0;
     content: "";
     height: 100%;
     left: 0;
