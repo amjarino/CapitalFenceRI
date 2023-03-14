@@ -29,6 +29,12 @@
 /*-----------------------------------------------
     #. Partner Section Css
 -----------------------------------------------*/
+
+
+.black-bg {
+    background: #ffffff !important;
+}
+
 .rs-partner {
   /* Owl Carousel Nav */
 }
