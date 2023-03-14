@@ -1,7 +1,6 @@
 /*-----------------------------
     CSS INDEX
 	===================
-		Partner Section Css
 	1.	header-top-area
 	2.  slider-area
 	3.	home-service-area
@@ -26,73 +25,6 @@
 -----------------------------------------------------------------------------------*/
 
 
-/*-----------------------------------------------
-    #. Partner Section Css
------------------------------------------------*/
-
-
-.black-bg {
-    background: #ffffff !important;
-}
-
-.rs-partner {
-  /* Owl Carousel Nav */
-}
-.rs-partner .item {
-  text-align: center;
-}
-.rs-partner .item a {
-  display: inline-block;
-}
-.rs-partner .item a img {
-  max-width: 150px;
-  margin: 0 auto;
-  height: auto;
-}
-.rs-partner .owl-carousel {
-  padding-top: 0;
-}
-.rs-partner .owl-carousel .owl-nav [class*="owl-"] {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #ffffff;
-  color: #1C2A58;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  display: inline-block;
-  text-align: center;
-  opacity: 0 !important;
-  visibility: hidden !important;
-  transition: all 0.3s ease;
-  outline: none;
-  border: none;
-}
-.rs-partner .owl-carousel .owl-nav [class*="owl-"] i {
-  font-size: 0;
-  position: relative;
-}
-.rs-partner .owl-carousel .owl-nav [class*="owl-"].owl-prev {
-  left: 15px;
-}
-.rs-partner .owl-carousel .owl-nav [class*="owl-"].owl-next {
-  right: 15px;
-}
-.rs-partner .owl-carousel .owl-nav [class*="owl-"]:hover {
-  background-color: #e94d65;
-}
-.rs-partner .owl-carousel:hover [class*="owl-"] {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-.rs-partner .owl-carousel:hover [class*="owl-"] .owl-prev {
-  left: -50px;
-}
-.rs-partner .owl-carousel:hover [class*="owl-"] .owl-next {
-  right: -50px;
-}
 /* header-top-area */
 element.style {
     text-underline-position: under;
