@@ -1644,12 +1644,14 @@ Home 4 Header Style
     transition: all 0.3s ease 0s;
     width: 112px;
     font-size: 35px;
+	display: none;
 }
 
 .our-services-wrapper:hover .our-services-icon {
     background: #1C2A58;
     box-shadow: 0 0 0 2px #1C2A58;
     color: #fff;
+	display: none;
 }
 
 .our-services-text>h3 {
