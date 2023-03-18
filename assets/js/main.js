@@ -214,3 +214,38 @@
 
 
 })(jQuery);
+
+
+
+
+//============================= loader ===============================
+
+let preloader = document.querySelector("#loader-wrap");
+let body = document.getElementsByTagName("body")
+let bodySize=  body[0].offsetHeight;
+console.log(bodySize);
+preloader.style.height = bodySize+"px";
+
+if (preloader != null) {
+  let loader = () => {
+    setInterval(() => {
+      if (!preloader.style.opacity) {
+        preloader.style.opacity = 1;
+      }
+      if (preloader.style.opacity > 0) {
+        preloader.classList.add("fade");
+        preloader.style.Zindex = -999999992;
+        body[0].style.minHeight="100vh";
+        body[0].style.overflow="auto";
+
+        preloader.remove();
+      } else {
+        clearInterval(loader);
+      }
+    }, 1500);
+  };
+
+  window.addEventListener("load", loader);
+} else {
+  console.log(preloader);
+}
