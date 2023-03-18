@@ -214,3 +214,36 @@
 
 
 })(jQuery);
+
+
+
+
+//============================= loader ===============================
+
+let preloader = document.querySelector("#loader-wrap");
+let body = document.querySelector("body")
+
+
+if (preloader != null) {
+  let loader = () => {
+    setInterval(() => {
+      if (!preloader.style.opacity) {
+        preloader.style.opacity = 1;
+      }
+      if (preloader.style.opacity > 0) {
+        preloader.classList.add("fade");
+        preloader.style.Zindex = -999999992;
+        body.style.minHeight="100vh";
+        body.style.overflow="auto";
+
+        preloader.remove();
+      } else {
+        clearInterval(loader);
+      }
+    }, 1500);
+  };
+
+  window.addEventListener("load", loader);
+} else {
+  console.log(preloader);
+}
