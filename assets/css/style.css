@@ -3361,24 +3361,46 @@ body {
 .logo-ld {
   width: 100%;
   height: auto;
-  animation: heartbit 1s ease-in-out infinite forwards;
-  transition: animation 1s ease;
+  transition: 1s ease;
 }
 
 .loader-wrap.fade {
   animation: fade 1s ease-in 1 forwards;
   transition: opacity 1s ease;
 }
-
-/* keyframes */
-@keyframes heartbit {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.01);
-  }
+/* dots  */
+.dots-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
 }
+.dots-loader:before,
+.dots-loader:after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.dots-loader:before {
+  animation: opacitychange 1s ease-in-out infinite;
+}
+.dots-loader:after {
+  animation: opacitychange 1s ease-in-out 0.66s infinite;
+}
+.dots-loader span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin: 0 5px;
+  opacity: 0;
+  animation: opacitychange 1s ease-in-out 0.33s infinite;
+}
+/* keyframes */
 
 @keyframes fade {
   from {
@@ -3388,3 +3410,13 @@ body {
     opacity: 0;
   }
 }
+@keyframes opacitychange {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+}
+/* end loader */
